@@ -1,0 +1,400 @@
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  font-family: 'Balsamiq Sans', cursive;
+  background-color: #333;
+}
+
+.active {
+  color: #006ab1;
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.wrapper h2 {
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+.underline {
+  position: relative;
+  margin: 0 auto 40px;
+  background-color: #006ab1;
+  height: 2px;
+  width: 25px;
+  border-radius: 25%;
+}
+
+.jumbotron {
+  padding: 20px 0;
+  margin-bottom: 0;
+}
+
+.visibility {
+  visibility: hidden;
+}
+
+.scroll-fix::before {
+  content: '';
+  display: block;
+  height: 66px;
+  margin-top: -66px;
+}
+
+nav {
+  text-transform: uppercase;
+  background-color: transparent;
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
+}
+
+nav i {
+  padding: 10px;
+}
+
+nav a, nav i {
+  color: #fff;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+nav a span, nav i span {
+  color: #006ab1;
+}
+
+nav a:hover i, nav i:hover {
+  color: #006ab1;
+}
+
+nav .navbar-brand .show {
+  font-weight: bold;
+}
+
+.shadow-bg {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.hero-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+header {
+  overflow: hidden;
+  text-align: center;
+}
+
+header h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+  border-bottom: solid;
+  color: white;
+  -webkit-animation: backInUp;
+          animation: backInUp;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+header h1 span {
+  color: #006ab1;
+  border-bottom: solid;
+}
+
+header p {
+  text-align: center;
+  color: #ffffff;
+  -webkit-animation: backInUp;
+          animation: backInUp;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+}
+
+header .hero-img {
+  position: relative;
+  height: 100vh;
+  background-image: url("../img/konsola-mala.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+header .hero-img a#arrow {
+  position: absolute;
+  left: 50%;
+}
+
+header .hero-img .hero-txt {
+  z-index: 10;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  color: white;
+}
+
+header .hero-img .fa-caret-down {
+  position: absolute;
+  bottom: 4%;
+  font-size: 30px;
+  z-index: 10;
+  color: white;
+  display: block;
+  -webkit-animation: bounce infinite 1.6s;
+          animation: bounce infinite 1.6s;
+}
+
+#aboutus i {
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+#aboutus h3 {
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+#aboutus p {
+  font-size: 10px;
+}
+
+#aboutus .row .aboutus-hover {
+  -webkit-transition: color .7s;
+  transition: color .7s;
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  border-bottom-right-radius: 5%;
+  border-top-left-radius: 5%;
+}
+
+#aboutus .row .aboutus-hover:hover {
+  background-color: #276df085;
+  border-right: 1px solid #006ab1;
+  border-bottom: 1px solid #006ab1;
+  color: white;
+}
+
+.makefor {
+  position: relative;
+  background-image: url("../img/technology-male.jpg");
+  color: white;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.makefor h2 {
+  padding-top: 5%;
+}
+
+.makefor i {
+  font-size: 30px;
+}
+
+.carousel-item {
+  position: relative;
+  height: 600px;
+}
+
+.carousel-item img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -45%);
+          transform: translate(-50%, -45%);
+}
+
+.carousel-caption {
+  width: 100%;
+  left: 0;
+}
+
+.carousel-caption h5, .carousel-caption p {
+  position: relative;
+  z-index: 10;
+}
+
+.prices-card {
+  margin: auto auto;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  -webkit-box-shadow: 5px 5px 5px grey;
+          box-shadow: 5px 5px 5px grey;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.prices-card h3 {
+  color: #006ab1;
+  border-bottom: 2px solid transparent;
+  text-transform: uppercase;
+}
+
+.prices-card span {
+  font-weight: bold;
+}
+
+.prices-card p:last-of-type {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.prices-card button:hover {
+  background-color: #006ab1;
+}
+
+.prices-card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 5px 5px 5px #006ab1;
+          box-shadow: 5px 5px 5px #006ab1;
+}
+
+.prices-card:hover h3 {
+  border-bottom: 2px solid black;
+}
+
+#team .jumbotron {
+  position: relative;
+  background-image: url("/img/team/conference-room.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#team .jumbotron h2 {
+  color: white;
+}
+
+#team .jumbotron .shadow-team {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100%;
+  width: 100%;
+  top: 0;
+}
+
+#team .card-body {
+  height: 150px;
+}
+
+#team .card {
+  overflow: hidden;
+}
+
+#team .card img {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#team .card p {
+  text-align: justify;
+}
+
+#team .card:hover {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+#team h5 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.achivements-card {
+  margin: 7px auto;
+}
+
+.achivements-card i {
+  font-size: 30px;
+  color: #fff;
+  text-shadow: 0 0 5px black;
+}
+
+.achivements-card p:first-of-type {
+  font-size: 20px;
+  margin: 10px auto 5px;
+}
+
+.achivements-card p:last-of-type {
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+#contact .jumbotron {
+  color: white;
+  position: relative;
+  background-image: url("/img/katowice.jpg");
+  background-position: center;
+}
+
+#contact .about-shadow {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#contact .contact-item {
+  margin-bottom: 10px;
+}
+
+#contact h5 {
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+#contact p {
+  font-size: 8px;
+  margin: 2px 0;
+}
+
+#contact a {
+  color: white;
+  -webkit-transition: color .3s;
+  transition: color .3s;
+}
+
+#contact a:hover {
+  color: #006ab1;
+}
+
+footer p {
+  text-align: center;
+  font-size: 12px;
+  padding: 10px;
+  margin-bottom: 0;
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,278 @@
+$blue-color: #006ab1
+    
+*, *::after, *::before
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+html
+    scroll-behavior: smooth
+body
+    position: relative
+    font-family: 'Balsamiq Sans', cursive
+    background-color: #333
+.active
+    color: $blue-color
+.wrapper
+    width: 80%
+    margin: 0 auto
+    h2
+        position: relative
+        text-align: center
+        text-transform: uppercase
+        font-size: 24px
+.underline
+    position: relative
+    margin: 0 auto 40px
+    background-color: $blue-color
+    height: 2px
+    width: 25px
+    border-radius: 25%
+.jumbotron
+    padding: 20px 0
+    margin-bottom: 0
+.visibility
+    visibility: hidden
+.scroll-fix::before
+    content: ''
+    display: block
+    height: 66px
+    margin-top: -66px
+//Nawigacja
+nav
+    text-transform: uppercase
+    background-color: transparent
+    transition: background-color 1s
+    i
+        padding: 10px
+    a, i
+        color:#fff
+        transition: color .3s
+        span
+            color: $blue-color
+    a:hover i, i:hover,
+        color: $blue-color
+        
+    .navbar-brand .show
+        font-weight: bold
+.shadow-bg
+    background-color: rgba(0, 0, 0, .8)
+
+//***************************
+//***********header**********
+
+.hero-bg
+    position: absolute
+    width: 100%
+    height: 100%
+    background-color: rgba(00,00,00,.8)
+header
+    overflow: hidden
+    text-align: center
+    h1
+        text-transform: uppercase
+        font-weight: bold
+        text-align: center
+        border-bottom: solid
+        color: white
+        animation: backInUp
+        animation-duration: 2s
+        span
+            color: $blue-color
+            border-bottom: solid
+
+    p
+        text-align: center
+        color: #ffffff
+        animation: backInUp 
+        animation-duration: 2.5s 
+    .hero-img
+        position: relative
+        height: 100vh
+        background-image: url('../img/konsola-mala.jpg')
+        background-position: center
+        background-size: cover
+        background-attachment: fixed
+        a#arrow
+            position: absolute
+            left: 50%
+
+
+        .hero-txt
+            z-index: 10
+            position: relative
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: center
+            height: 100%
+            color: white
+
+        .fa-caret-down
+            position: absolute
+            bottom: 4%
+            font-size: 30px
+            z-index: 10
+            color: white
+            display: block
+            animation: bounce infinite 1.6s
+
+
+// MAIN
+
+#aboutus
+    i
+        font-size: 30px
+        margin-top: 20px
+    h3
+        text-transform: uppercase
+        font-size: 20px
+    p
+        font-size: 10px
+    .row
+        .aboutus-hover
+            transition: color .7s
+            border-right: 1px solid transparent
+            border-bottom: 1px solid transparent
+            border-bottom-right-radius: 5%
+            border-top-left-radius: 5%
+            
+        .aboutus-hover:hover
+            background-color: #276df085
+            border-right: 1px solid $blue-color
+            border-bottom: 1px solid $blue-color
+            color: white
+.makefor
+    position: relative
+    background-image: url('../img/technology-male.jpg')
+    color: white
+    height: 100%
+    background-position: center
+    background-size: cover
+    overflow: hidden
+    h2
+        padding-top: 5%
+    i
+        font-size: 30px
+
+.carousel-item
+    position: relative 
+    height: 600px
+    img
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -45%)
+.carousel-caption
+    width: 100%
+    left: 0
+    h5,p 
+        position: relative
+        z-index: 10
+
+.card
+    // flex: 1 1 100% !important
+
+// CENY
+
+
+.prices-card
+    margin: auto auto
+    border-bottom: 1px solid black 
+    border-right: 1px solid black 
+    box-shadow: 5px 5px 5px grey
+    transition: .3s
+    h3
+        color: $blue-color
+        border-bottom: 2px solid transparent
+        text-transform: uppercase
+    span
+        font-weight: bold
+    p:last-of-type
+        font-size: 30px
+        font-weight: bold
+    button:hover
+        background-color: $blue-color
+.prices-card:hover
+    transform: scale(1.1)
+    box-shadow: 5px 5px 5px $blue-color
+.prices-card:hover h3
+            border-bottom: 2px solid black
+
+// zespół
+#team
+
+    .jumbotron
+        position: relative
+        background-image: url('/img/team/conference-room.jpg')
+        background-size: cover
+        background-attachment: fixed
+        h2
+            color: white
+        .shadow-team
+            position: absolute
+            background-color: rgba(0, 0, 0,.8)
+            height: 100%
+            width: 100%
+            top: 0
+    .card-body
+        height: 150px
+    .card
+        overflow: hidden
+        img
+            height: 300px
+            object-fit: cover
+        p
+            text-align: justify
+    .card:hover
+        transform: scale(0.95)
+    h5
+        text-align: center
+        text-transform: uppercase
+        font-weight: bold
+//Achiwments
+.achivements-card
+    margin: 7px auto
+    i
+        font-size: 30px
+        color: #fff
+        text-shadow: 0 0 5px black
+    p:first-of-type
+        font-size: 20px
+        margin: 10px auto 5px
+    p:last-of-type
+        text-transform: uppercase
+        font-size: 10px
+//kontakt
+#contact
+    .jumbotron
+        color: white
+        position: relative
+        background-image: url("/img/katowice.jpg")
+        background-position: center
+    .about-shadow
+        position: absolute
+        top: 0
+        width: 100%
+        height: 100%
+        background-color: rgba(0, 0, 0, .8)
+    .contact-item
+        margin-bottom: 10px
+    h5
+        font-size: 10px
+        text-transform: uppercase
+    p
+        font-size: 8px
+        margin: 2px 0
+    a
+        color: white
+        transition: color .3s
+    a:hover
+        color: $blue-color
+//footer
+footer
+    p
+        text-align: center
+        font-size: 12px
+        padding: 10px
+        margin-bottom: 0
+        color: #fff
